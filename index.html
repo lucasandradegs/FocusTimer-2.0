@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer 2.0 - Pomodoro</title>
+    <meta name="description" content="Timer para pomodoro">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div id="app">
+        <div id="timer-control">
+            <section id="timer" class="flex">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+
+            <section id="controls" class="flex">
+                <button class="ph ph-play-circle" data-action="toggleRunning"><span class="sr-only">Iniciar contador</span></button>
+                <button class="ph ph-pause-circle" data-action="toggleRunning"><span class="sr-only">Pausar contador</span></button>
+                <button class="ph ph-stop-circle" data-action="reset"><span class="sr-only">Parar contador</span></button>
+                <button class="ph ph-plus-circle" data-action="plusMinutes"><span class="sr-only">Acrescentar 5 minutos no timer</span></button>
+                <button class="ph ph-minus-circle" data-action="minusMinutes"><span class="sr-only">Tirar 5 minutos no timer</span></button>
+            </section>
+        </div>
+
+        <div id="sounds-control">
+            <section id="sounds">
+                <button class="colored-tree"><img src="./assets/colored-tree.svg" alt="" data-image="toggleTree"></button>
+                <button class="tree"><img src="./assets/tree.svg" alt="" data-image="toggleTree"></button>
+                <button class="colored-rain"><img src="./assets/colored-rain.svg" alt="" data-image="toggleRain"></button>
+                <button class="rain"><img src="./assets/rain.svg" alt="" data-image="toggleRain"></button>
+                <button class="colored-store"><img src="./assets/colored-store.svg" alt="" data-image="toggleStore"></button>
+                <button class="store"><img src="./assets/store.svg" alt="" data-image="toggleStore"></button>
+                <button class="colored-fire"><img src="./assets/colored-fire.svg" alt="" data-image="toggleFire"></button>
+                <button class="fire"><img src="./assets/fire.svg" alt="" data-image="toggleFire"></button>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
